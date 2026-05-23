@@ -16,7 +16,3 @@
 
     new /mob/npc/auralis/oficial_contratos(locate(28, 30, 1))
     new /turf/portal_fenda(locate(45, 30, 1))
-
-/world/New()
-    ..()
-    BuildAuralisPrototype()
