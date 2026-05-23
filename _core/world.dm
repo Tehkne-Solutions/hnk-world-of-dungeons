@@ -9,6 +9,8 @@ world
 
 world/New()
     ..()
+    BuildAuralisPrototype()
+    BuildPrimeiraFendaEntradaRachada()
     world.log << "HNK: World of Dungeons iniciado."
 
 /turf
@@ -45,3 +47,16 @@ world/New()
         if(istype(A, /mob/player))
             var/mob/player/P = A
             P.TryEnterFirstRift()
+
+/turf/portal_retorno_auralis
+    name = "Retorno para Auralis"
+    icon = 'assets/placeholder.dmi'
+    icon_state = "portal_return"
+    density = FALSE
+
+    Entered(atom/movable/A)
+        ..()
+        if(istype(A, /mob/player))
+            var/mob/player/P = A
+            P.loc = locate(44, 30, 1)
+            P << "Você retorna ao Portão da Fenda de Auralis."
