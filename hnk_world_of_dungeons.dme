@@ -1,0 +1,22 @@
+// HNK: World of Dungeons
+// BYOND project file
+
+#define HNK_WORLD_OF_DUNGEONS
+
+#include "_core/constants.dm"
+#include "_core/world.dm"
+#include "_core/player.dm"
+#include "systems/combat/combat.dm"
+#include "systems/skills/skill_base.dm"
+#include "systems/skills/skill_fogo_faisca_ardente.dm"
+#include "systems/guardians/guardian_base.dm"
+#include "systems/guardians/guardian_salamandra_animica.dm"
+#include "systems/missions/mission_base.dm"
+#include "systems/missions/mission_rank_d_primeira_fenda.dm"
+#include "systems/narrative/event_base.dm"
+#include "systems/narrative/memory.dm"
+#include "content/mobs/primeira_fenda/rastajante_pedra.dm"
+#include "content/npcs/auralis/oficial_contratos.dm"
+#include "content/items/materials/fragmento_rocha_espiritual.dm"
+#include "maps/auralis_proto.dm"
+#include "maps/primeira_fenda_entrada_rachada.dm"
