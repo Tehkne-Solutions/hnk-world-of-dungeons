@@ -1,0 +1,28 @@
+{
+  "pack": "byond_guardioes_32x32",
+  "tile_size": "32x32",
+  "background": "#FF00FF",
+  "guardians": [
+    {
+      "id": "guardiao_salamandra_animica",
+      "frames": "4 directions x 3 frames",
+      "directions": [
+        "south",
+        "west",
+        "east",
+        "north"
+      ],
+      "frames_order": [
+        "idle",
+        "walk_1",
+        "walk_2"
+      ],
+      "spritesheet": "96x128"
+    },
+    {
+      "id": "guardiao_centelha_salamandra",
+      "frames": "4 floating frames",
+      "spritesheet": "128x32"
+    }
+  ]
+}

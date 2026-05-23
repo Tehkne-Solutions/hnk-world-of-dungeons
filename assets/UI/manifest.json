@@ -1,0 +1,23 @@
+{
+  "pack": "byond_ui_32x32",
+  "tile_size": "32x32",
+  "background": "#FF00FF",
+  "items": [
+    "ui_hp_bar_frame",
+    "ui_hp_bar_fill",
+    "ui_energia_fisica_bar_fill",
+    "ui_fluxo_espiritual_bar_fill",
+    "ui_sincronia_bar_fill",
+    "ui_icon_missao_ativa",
+    "ui_icon_item_fragmento",
+    "ui_icon_guardiao_salamandra",
+    "ui_icon_skill_faisca_ardente",
+    "ui_icon_interagir",
+    "ui_icon_alerta_fenda",
+    "ui_cursor_alvo"
+  ],
+  "layout": {
+    "spritesheet": "4 columns x 3 rows",
+    "order": "left-to-right, top-to-bottom"
+  }
+}

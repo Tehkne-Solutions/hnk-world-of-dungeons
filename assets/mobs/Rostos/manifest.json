@@ -1,0 +1,36 @@
+{
+  "pack": "byond_player_face_marks_32x32",
+  "tile_size": "32x32",
+  "background": "#FF00FF",
+  "spritesheet_layout": {
+    "columns": [
+      "idle",
+      "walk_1",
+      "walk_2"
+    ],
+    "rows": [
+      "south",
+      "west",
+      "east",
+      "north"
+    ]
+  },
+  "categories": {
+    "olhos": "cores e expressões básicas",
+    "barbas": "barbas e cavanhaques",
+    "cicatrizes": "marcas de rosto",
+    "marcas_animicas": "marcas de fogo, luz, sombra e guardião",
+    "orelhas": "normal e pontuda em tons de pele"
+  },
+  "item_count": 37,
+  "layer_order_hint": [
+    "base_corpo_player",
+    "orelhas",
+    "olhos",
+    "barbas",
+    "cicatrizes",
+    "marcas_animicas",
+    "cabelo",
+    "equipamentos"
+  ]
+}

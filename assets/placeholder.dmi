@@ -1,0 +1,33 @@
+ver 1
+width 32
+height 32
+dirs 1
+frames 1
+delay 0
+
+state "floor_stone"
+  icon 0
+state "floor_plaza"
+  icon 0
+state "wall_stone"
+  icon 0
+state "portal"
+  icon 0
+state "portal_return"
+  icon 0
+state "guardian"
+  icon 0
+state "guardian_salamander"
+  icon 0
+state "npc"
+  icon 0
+state "npc_oficial_contratos"
+  icon 0
+state "enemy"
+  icon 0
+state "mob_rastejante_pedra"
+  icon 0
+state "item"
+  icon 0
+state "fragmento_rocha_espiritual"
+  icon 0

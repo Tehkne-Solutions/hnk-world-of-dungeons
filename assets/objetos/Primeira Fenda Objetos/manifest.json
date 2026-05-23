@@ -1,0 +1,17 @@
+{
+  "tile_size": "32x32",
+  "background": "#FF00FF",
+  "objects": [
+    "obj_portal_fenda_entrada",
+    "obj_cristal_fenda_pequeno",
+    "obj_fragmento_rocha_espiritual",
+    "obj_pedra_quebrada_01",
+    "obj_pedra_quebrada_02",
+    "obj_raiz_corrompida_pequena",
+    "obj_selo_pedra_inativo",
+    "obj_selo_pedra_ativo",
+    "obj_bau_simples",
+    "obj_saida_retorno_auralis"
+  ],
+  "spritesheet": "primeira_fenda_objetos_spritesheet_32x32.png"
+}

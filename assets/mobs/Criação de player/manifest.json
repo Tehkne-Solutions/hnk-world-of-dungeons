@@ -1,0 +1,24 @@
+{
+  "pack": "byond_character_creation_improved_all",
+  "tile_size": "32x32",
+  "background": "#FF00FF",
+  "spritesheet": "96x128",
+  "rows": [
+    "south",
+    "west",
+    "east",
+    "north"
+  ],
+  "columns": [
+    "idle",
+    "walk_1",
+    "walk_2"
+  ],
+  "layer_order": [
+    "base_corpo_player",
+    "roupas_calcas",
+    "roupas_camisas",
+    "cabelos"
+  ],
+  "matched_to": "base_corpo_melhorado"
+}

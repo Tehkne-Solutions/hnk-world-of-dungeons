@@ -1,0 +1,35 @@
+{
+  "pack": "byond_player_equipment_weapons_32x32",
+  "tile_size": "32x32",
+  "background": "#FF00FF",
+  "spritesheet_layout": {
+    "columns": [
+      "idle",
+      "walk_1",
+      "walk_2"
+    ],
+    "rows": [
+      "south",
+      "west",
+      "east",
+      "north"
+    ]
+  },
+  "items": [
+    "arma_espada_curta_inicial",
+    "arma_adaga_inicial",
+    "arma_cajado_aprendiz",
+    "arma_arco_curto_inicial",
+    "equip_escudo_redondo_inicial",
+    "equip_botas_couro_inicial",
+    "equip_luvas_couro_inicial"
+  ],
+  "layer_order_hint": [
+    "base_corpo_player",
+    "calca",
+    "camisa",
+    "botas_luvas",
+    "arma_ou_escudo",
+    "cabelo"
+  ]
+}

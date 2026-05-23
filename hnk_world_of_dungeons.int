@@ -1,0 +1,10 @@
+// BEGIN_INTERNALS
+/*
+MAP_PLANE_MASTERS: 
+MAP_ZOOM: 1.000
+LAST_COMPILE_TIME: 1779580293
+DIR: _core content content\items content\items\materials content\mobs content\mobs\primeira_fenda content\npcs maps systems systems\combat systems\guardians systems\missions systems\narrative systems\skills 
+AUTO_FILE_DIR: OFF
+MAP_ICON_TYPE: 0
+LAST_COMPILE_VERSION: 516.1677
+WINDOW: _core\player.dm;content\items\materials\fragmento_rocha_espiritual.dm;systems\skills\skill_fog

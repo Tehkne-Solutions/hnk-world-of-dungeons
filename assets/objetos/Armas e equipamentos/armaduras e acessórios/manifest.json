@@ -1,0 +1,40 @@
+{
+  "pack": "byond_player_armor_accessories_32x32",
+  "tile_size": "32x32",
+  "background": "#FF00FF",
+  "spritesheet_layout": {
+    "columns": [
+      "idle",
+      "walk_1",
+      "walk_2"
+    ],
+    "rows": [
+      "south",
+      "west",
+      "east",
+      "north"
+    ]
+  },
+  "items": [
+    "equip_armadura_couro_leve",
+    "equip_armadura_metal_leve",
+    "equip_manto_aprendiz_azul",
+    "equip_manto_espiritual_roxo",
+    "equip_capa_aventureiro_marrom",
+    "equip_capa_fenda_cinza",
+    "equip_cinto_couro_simples",
+    "equip_faixa_testa_vermelha",
+    "equip_amuleto_fluxo_azul",
+    "equip_amuleto_sincronia_roxo"
+  ],
+  "layer_order_hint": [
+    "base_corpo_player",
+    "calca",
+    "camisa",
+    "armadura_ou_manto",
+    "capa",
+    "cinto_amuleto",
+    "arma_ou_escudo",
+    "cabelo_ou_faixa"
+  ]
+}
