@@ -1,67 +1,74 @@
 client
-    skin = "ui/hnk_main.dmf"
 
 client/New()
     ..()
-    if(mob)
-        mob << "Interface inicializada. Use os verbs de Interface para abrir painéis."
+    if(client && client.mob)
+        var/mob/player/M = client.mob
+        M << "Interface inicializada. Use os verbs de Interface para abrir painéis."
         UpdateHUD()
 
 proc/ShowStatusPanel()
-    if(!mob)
+    if(!client || !client.mob)
         return
-    mob << "=== STATUS ==="
-    mob << "Nome: [mob.name]"
-    mob << "HP: [mob.hp]/[mob.max_hp] | Energia Física: [mob.energia_fisica]/[mob.max_energia_fisica]"
-    mob << "Fluxo Espiritual: [mob.fluxo_espiritual]/[mob.max_fluxo_espiritual] | Sincronia: [mob.sincronia]/[mob.max_sincronia]"
-    mob << "Rank: [mob.rank] | EXP: [mob.exp_personagem] | Moedas: [mob.moedas]"
-    mob << "Missão Rank D: [mob.GetMissionStateName()]"
+    var/mob/player/M = client.mob
+    M << "=== STATUS ==="
+    M << "Nome: [M.name]"
+    M << "HP: [M.hp]/[M.max_hp] | Energia Física: [M.energia_fisica]/[M.max_energia_fisica]"
+    M << "Fluxo Espiritual: [M.fluxo_espiritual]/[M.max_fluxo_espiritual] | Sincronia: [M.sincronia]/[M.max_sincronia]"
+    M << "Rank: [M.rank] | EXP: [M.exp_personagem] | Moedas: [M.moedas]"
+    M << "Missão Rank D: [M.GetMissionStateName()]"
 
 proc/ShowMissionPanel()
-    if(!mob)
+    if(!client || !client.mob)
         return
-    mob << "=== MISSÕES ==="
-    mob << "Rank D: Limpeza da Entrada Partida"
-    mob << "Estado: [mob.GetMissionStateName()]"
-    if(mob.missoes["missao_d_primeira_fenda_limpeza_entrada"] == MISSION_ACTIVE)
-        mob << "Objetivo: Elimine Rastejantes de Pedra e colete o Fragmento."
+    var/mob/player/M = client.mob
+    M << "=== MISSÕES ==="
+    M << "Rank D: Limpeza da Entrada Partida"
+    M << "Estado: [M.GetMissionStateName()]"
+    if(M.missoes["missao_d_primeira_fenda_limpeza_entrada"] == MISSION_ACTIVE)
+        M << "Objetivo: Elimine Rastejantes de Pedra e colete o Fragmento."
 
 proc/ShowInventoryPanel()
-    if(!mob)
+    if(!client || !client.mob)
         return
-    mob << "=== INVENTÁRIO ==="
-    var/amount = mob.inventario["material_primeira_fenda_fragmento_rocha_espiritual"]
+    var/mob/player/M = client.mob
+    M << "=== INVENTÁRIO ==="
+    var/amount = M.inventario["material_primeira_fenda_fragmento_rocha_espiritual"]
     if(!amount)
         amount = 0
-    mob << "Fragmento de Rocha Espiritual: [amount]"
+    M << "Fragmento de Rocha Espiritual: [amount]"
 
 proc/ShowGuardianPanel()
-    if(!mob)
+    if(!client || !client.mob)
         return
-    mob << "=== GUARIDÃO ==="
-    if(mob.guardiao_ativo)
-        mob << "Guardião ativo: Salamandra Anímica"
-        mob << "Sincronia atual: [mob.sincronia]/[mob.max_sincronia]"
+    var/mob/player/M = client.mob
+    M << "=== GUARIDÃO ==="
+    if(M.guardiao_ativo)
+        M << "Guardião ativo: Salamandra Anímica"
+        M << "Sincronia atual: [M.sincronia]/[M.max_sincronia]"
     else
-        mob << "Nenhum guardião ativo. Use ChamarGuardiao."
+        M << "Nenhum guardião ativo. Use ChamarGuardiao."
 
 proc/ShowSkillsPanel()
-    if(!mob)
+    if(!client || !client.mob)
         return
-    mob << "=== SKILLS ==="
-    mob << "Ataque Básico: dano 10, custo 5 Energia Física, alcance 1"
-    mob << "Faísca Ardente: dano 18, custo 8 Fluxo Espiritual, alcance 4"
+    var/mob/player/M = client.mob
+    M << "=== SKILLS ==="
+    M << "Ataque Básico: dano 10, custo 5 Energia Física, alcance 1"
+    M << "Faísca Ardente: dano 18, custo 8 Fluxo Espiritual, alcance 4"
 
 proc/ShowSystemPanel()
-    if(!mob)
+    if(!client || !client.mob)
         return
-    mob << "=== SISTEMA ==="
-    mob << "Fale com o Oficial de Contratos para aceitar o contrato Rank D."
-    mob << "Vá ao Portal da Fenda com a missão ativa."
-    mob << "Use AtaqueBasico ou FaiscaArdente para lutar."
-    mob << "Colete o Fragmento e retorne para entregar a missão."
+    var/mob/player/M = client.mob
+    M << "=== SISTEMA ==="
+    M << "Fale com o Oficial de Contratos para aceitar o contrato Rank D."
+    M << "Vá ao Portal da Fenda com a missão ativa."
+    M << "Use AtaqueBasico ou FaiscaArdente para lutar."
+    M << "Colete o Fragmento e retorne para entregar a missão."
 
 proc/UpdateHUD()
-    if(!mob)
+    if(!client || !client.mob)
         return
-    mob << "[mob.name] | HP: [mob.hp]/[mob.max_hp] | Energia: [mob.energia_fisica]/[mob.max_energia_fisica] | Fluxo: [mob.fluxo_espiritual]/[mob.max_fluxo_espiritual] | Sincronia: [mob.sincronia]/[mob.max_sincronia] | Missão: [mob.GetMissionStateName()]"
+    var/mob/player/M = client.mob
+    M << "[M.name] | HP: [M.hp]/[M.max_hp] | Energia: [M.energia_fisica]/[M.max_energia_fisica] | Fluxo: [M.fluxo_espiritual]/[M.max_fluxo_espiritual] | Sincronia: [M.sincronia]/[M.max_sincronia] | Missão: [M.GetMissionStateName()]"

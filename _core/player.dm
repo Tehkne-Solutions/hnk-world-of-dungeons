@@ -35,6 +35,7 @@
         EnsurePrototypeState()
         src << "Bem-vindo a Auralis. Fale com o Oficial de Contratos para iniciar."
         if(src.client)
+            src.client.skin = "ui/hnk_main.dmf"
             src.client.UpdateHUD()
 
     proc/EnsurePrototypeState()
