@@ -1,6 +1,6 @@
 /obj/guardian
     name = "Guardião Astral"
-    icon = 'assets/placeholder.dmi'
+    icon = 'assets/guardians/guardian_placeholder.dmi'
     icon_state = "guardian"
     density = FALSE
 

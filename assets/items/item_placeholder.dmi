@@ -1,0 +1,9 @@
+ver 1
+width 32
+height 32
+dirs 1
+frames 1
+delay 0
+
+state "fragmento_rocha_espiritual"
+  icon 0

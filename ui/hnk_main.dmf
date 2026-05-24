@@ -1,0 +1,20 @@
+# HNK: World of Dungeons interface placeholder
+#
+# Este arquivo deve ser criado/ajustado no Dream Maker para a skin de interface.
+# Ele está presente como placeholder e referência para a conexão via client.skin.
+#
+# Layout desejado:
+# - main window
+# - main_map
+# - main_output
+# - main_input
+# - right_panel
+# - tab_status
+# - tab_missoes
+# - tab_inventario
+# - tab_guardiao
+# - tab_skills
+# - tab_mapa
+# - tab_sistema
+#
+# Abra este arquivo no Dream Maker e crie os controles de interface.

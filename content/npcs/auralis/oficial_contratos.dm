@@ -1,6 +1,6 @@
 /mob/npc
     density = TRUE
-    icon = 'assets/placeholder.dmi'
+    icon = 'assets/npcs/npc_placeholder.dmi'
     icon_state = "npc"
 
     verb/Falar()

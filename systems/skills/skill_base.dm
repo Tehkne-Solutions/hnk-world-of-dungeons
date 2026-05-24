@@ -24,6 +24,8 @@
     proc/PayCost(mob/player/user)
         user.fluxo_espiritual -= custo_fluxo
         user.energia_fisica -= custo_energia
+        if(user.client)
+            user.client.UpdateHUD()
 
     proc/Use(mob/player/user)
         return FALSE

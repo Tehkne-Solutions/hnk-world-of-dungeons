@@ -1,7 +1,7 @@
 /mob/enemy
     name = "Inimigo"
     density = TRUE
-    icon = 'assets/placeholder.dmi'
+    icon = 'assets/mobs/mob_placeholder.dmi'
     icon_state = "enemy"
 
     var

@@ -42,8 +42,14 @@
 
 /proc/AcceptRankDMission(mob/player/P)
     var/datum/mission/rank_d/primeira_fenda_limpeza_entrada/M = new
-    return M.Accept(P)
+    var/result = M.Accept(P)
+    if(result && P.client)
+        P.client.UpdateHUD()
+    return result
 
 /proc/TryTurnInRankDMission(mob/player/P)
     var/datum/mission/rank_d/primeira_fenda_limpeza_entrada/M = new
-    return M.TurnIn(P)
+    var/result = M.TurnIn(P)
+    if(result && P.client)
+        P.client.UpdateHUD()
+    return result

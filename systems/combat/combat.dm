@@ -37,4 +37,6 @@
     user.energia_fisica -= 5
     user << "Você executa um ataque básico."
     DealDamage(user, target, 10, "fisico")
+    if(user.client)
+        user.client.UpdateHUD()
     return TRUE

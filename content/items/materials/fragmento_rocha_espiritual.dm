@@ -1,6 +1,6 @@
 /obj/item
     name = "Item"
-    icon = 'assets/placeholder.dmi'
+    icon = 'assets/items/item_placeholder.dmi'
     icon_state = "item"
     density = FALSE
 

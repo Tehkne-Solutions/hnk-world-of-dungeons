@@ -1,0 +1,17 @@
+ver 1
+width 32
+height 32
+dirs 1
+frames 1
+delay 0
+
+state "floor_stone"
+  icon 0
+state "floor_plaza"
+  icon 0
+state "wall_stone"
+  icon 0
+state "portal"
+  icon 0
+state "portal_return"
+  icon 0
