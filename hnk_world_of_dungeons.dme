@@ -6,6 +6,7 @@
 #include "_core/constants.dm"
 #include "_core/world.dm"
 #include "_core/player.dm"
+#include "_core/client.dm"
 #include "systems/combat/combat.dm"
 #include "systems/skills/skill_base.dm"
 #include "systems/skills/skill_fogo_faisca_ardente.dm"
