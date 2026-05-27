@@ -1,5 +1,4 @@
 client
-	var/skin
 
 client/New()
 	..()
@@ -43,7 +42,7 @@ proc/ShowGuardianPanel()
 	if(!mob)
 		return
 	var/mob/player/M = mob
-	M << "=== GUARIDÃO ==="
+	M << "=== GUARDIÃO ==="
 	if(M.guardiao_ativo)
 		M << "Guardião ativo: Salamandra Anímica"
 		M << "Sincronia atual: [M.sincronia]/[M.max_sincronia]"
