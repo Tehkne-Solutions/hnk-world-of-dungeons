@@ -1,7 +1,5 @@
 /obj/guardian
     name = "Guardião Astral"
-    icon = 'assets/placeholder.dmi'
-    icon_state = "guardian"
     density = FALSE
 
     var
