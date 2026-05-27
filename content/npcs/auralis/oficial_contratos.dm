@@ -1,4 +1,6 @@
 /mob/npc
+    icon = 'assets/placeholder.dmi'
+    icon_state = "npc"
     density = TRUE
 
     verb/Falar()
@@ -7,6 +9,7 @@
 
 /mob/npc/auralis/oficial_contratos
     name = "Oficial de Contratos"
+    icon_state = "npc_oficial_contratos"
 
     Falar()
         set src in oview(1)
