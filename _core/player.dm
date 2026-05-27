@@ -1,5 +1,7 @@
 /mob/player
     name = "Aventureiro"
+    icon = 'assets/placeholder.dmi'
+    icon_state = "player_idle"
     density = TRUE
 
     var
