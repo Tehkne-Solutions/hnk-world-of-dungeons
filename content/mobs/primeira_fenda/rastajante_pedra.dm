@@ -1,5 +1,7 @@
 /mob/enemy
     name = "Inimigo"
+    icon = 'assets/placeholder.dmi'
+    icon_state = "enemy"
     density = TRUE
 
     var
@@ -40,6 +42,7 @@
 
 /mob/enemy/primeira_fenda/rastajante_pedra
     name = "Rastejante de Pedra"
+    icon_state = "mob_rastejante_pedra"
     max_hp = 34
     hp = 34
     dano_base = 6
